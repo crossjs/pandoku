@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="@drawable/bg">
+
+	<TextView android:text="@string/page_title_about" style="@style/PageTitle"
+		android:id="@+id/pageTitle" />
+
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="0dp" android:layout_weight="1" />
+
+	<TextView android:layout_height="wrap_content" android:text="@string/app_name"
+		android:layout_width="wrap_content" android:layout_gravity="center_horizontal"
+		android:layout_margin="10dp" android:textSize="30sp" />
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_gravity="center_horizontal" android:layout_margin="10dp">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/version"
+			android:textSize="16sp" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/app_version"
+			android:textSize="16sp" />
+	</LinearLayout>
+
+	<TextView android:text="@string/thanksto"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal" android:textSize="24sp"
+		android:layout_margin="10dp" />
+	<TextView android:text="@string/thanksto_content"
+		android:layout_width="wrap_content" android:layout_gravity="center_horizontal"
+		android:layout_height="wrap_content" android:layout_margin="10dp" />
+
+	<TextView android:layout_height="wrap_content" android:text="@string/copyright"
+		android:layout_width="wrap_content" android:layout_gravity="center_horizontal"
+		android:layout_margin="10dp" android:textSize="16sp" />
+
+	<TextView android:layout_width="wrap_content"
+		android:layout_gravity="center_horizontal" android:layout_height="wrap_content"
+		android:text="@string/projecturl" android:autoLink="web" />
+
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="0dp" android:layout_weight="1" />
+
+	<Button style="@style/PageButtonBack" android:id="@+id/pageButton"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="@string/pagebutton_back" android:layout_gravity="center_horizontal"
+		android:layout_margin="10dp" />
+
+</LinearLayout>

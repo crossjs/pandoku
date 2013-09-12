@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="menu_normal">#2fff</color>
+	<color name="menu_pressed">#2000</color>
+	<!-- <color name="p_number">#ff646f7c</color> -->
+	<color name="p_blue">#ff0280c8</color>
+	<color name="p_text">#ff333333</color>
+	<color name="p_button">#ff333333</color>
+</resources>

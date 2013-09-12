@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<!-- The possible grid styles (used by "Start New Game") -->
+	<string-array name="styles">
+		<item>标准</item>
+		<item>曲型</item>
+	</string-array>
+
+	<!-- The possible extra regions (used by "Start New Game") -->
+	<string-array name="extras">
+		<item>标准</item>
+		<item>交叉</item>
+		<item>超级</item>
+		<item>巴仙</item>
+		<item>多彩</item>
+	</string-array>
+
+	<!-- The possible difficulties (used by "Start New Game") -->
+	<string-array name="levels">
+		<item>极易</item>
+		<item>容易</item>
+		<item>中等</item>
+		<item>困难</item>
+		<item>极难</item>
+	</string-array>
+
+	<!-- Values for "Colored Regions" (used by "Settings") -->
+	<string-array name="pref_entries_colored_regions">
+		<item>从不</item>
+		<item>仅标准普通与异形普通</item>
+		<item>仅标准系列与异形普通</item>
+		<item>总是</item>
+	</string-array>
+
+	<!-- Values for "Highlight Digits" (used by "Settings") -->
+	<string-array name="pref_entries_highlight_digits">
+		<item>从不</item>
+		<item>仅单个值</item>
+		<item>单个与多个</item>
+	</string-array>
+
+	<!-- Values for "Color Theme" (used by "Settings") -->
+	<string-array name="pref_entries_color_theme">
+		<item>云淡风轻</item>
+		<item>黑云压城</item>
+	</string-array>
+
+	<!-- Values for "Input Method" (used by "Settings") -->
+	<string-array name="pref_entries_input_method">
+		<item>先格子后数字</item>
+		<item>先数字后格子</item>
+		<item>自动</item>
+	</string-array>
+</resources>

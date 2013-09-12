@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="pref_category_display">显示设置</string>
+	<string name="pref_fullscreen_mode">全屏模式</string>
+	<string name="pref_color_theme">主题风格</string>
+	<string name="pref_colored_regions">填色区域</string>
+	<string name="pref_category_behavior">操作方式</string>
+	<string name="pref_input_method">输入方式</string>
+	<string name="pref_check_against_solution">错误检查</string>
+	<string name="pref_category_game_features">游戏设置</string>
+	<string name="pref_highlight_digits">高亮数值</string>
+	<string name="pref_show_timer">显示计时</string>
+	<string name="pref_enable_eliminate_values">启用排除</string>
+</resources>

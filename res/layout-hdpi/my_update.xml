@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="@drawable/bg">
+
+	<TextView android:text="@string/page_title_update" style="@style/PageTitle"
+		android:id="@+id/pageTitle" />
+
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="0dp" android:layout_weight="1" />
+		
+		<ImageView android:src="@drawable/bg_panda_forward" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal"/>
+
+	<FrameLayout
+	    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="30dp">
+	    <ProgressBar style="@style/ProgressBar" android:id="@+id/progressBar"
+    		android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_gravity="center_horizontal"/>
+    	<TextView android:id="@+id/textView" android:textSize="11sp"
+    		android:gravity="center_horizontal" android:layout_height="wrap_content"
+    		android:layout_gravity="center" android:layout_width="fill_parent"/>
+	</FrameLayout>
+
+	<Button style="@style/commonButton" android:id="@+id/updateButton"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:text="@string/button_check_update" android:layout_gravity="center_horizontal" android:layout_marginTop="30dp"/>
+
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="0dp" android:layout_weight="1" />
+
+	<Button style="@style/PageButtonBack" android:id="@+id/pageButton"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="@string/pagebutton_back" android:layout_gravity="center_horizontal"
+		android:layout_margin="10dp" />
+
+</LinearLayout>

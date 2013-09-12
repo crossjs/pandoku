@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="@drawable/bg"
+	style="@style/PageAnimation">
+	<TextView android:text="@string/page_title_newgame" style="@style/PageTitle"
+		android:id="@+id/pageTitle" />
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="0dp" android:layout_weight="1"></TextView>
+
+	<Gallery android:layout_width="fill_parent"
+		android:layout_height="@dimen/gallery_height" android:spacing="6dp"
+		android:id="@+id/styleGallery" />
+	<TextView android:layout_width="fill_parent" android:id="@+id/miniStats"
+		android:textSize="12sp" android:layout_height="wrap_content"
+		android:gravity="center" android:layout_marginTop="8dp"></TextView>
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:layout_marginLeft="42dp" android:layout_marginRight="42dp"
+		android:layout_marginTop="10dp">
+		<TextView android:id="@+id/levelText1" android:text="@string/level_text_1"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:gravity="center" android:layout_width="0dp" android:textSize="16sp" />
+		<TextView android:id="@+id/levelText2" android:text="@string/level_text_2"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:gravity="center" android:layout_width="0dp" android:textSize="16sp" />
+		<TextView android:id="@+id/levelText3" android:text="@string/level_text_3"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:gravity="center" android:layout_width="0dp"
+			android:textColor="@color/p_blue" android:textSize="16sp" />
+		<TextView android:id="@+id/levelText4" android:text="@string/level_text_4"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:gravity="center" android:layout_width="0dp" android:textSize="16sp" />
+		<TextView android:id="@+id/levelText5" android:text="@string/level_text_5"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:gravity="center" android:layout_width="0dp" android:textSize="16sp" />
+	</LinearLayout>
+
+	<SeekBar android:id="@+id/levelSeekBar" android:layout_width="fill_parent"
+		android:max="4" android:thumb="@drawable/thumb" android:thumbOffset="0dp"
+		android:layout_height="wrap_content" android:progress="2"
+		android:progressDrawable="@drawable/seekbar" android:maxHeight="3dp"
+		android:layout_marginLeft="48dp" android:layout_marginRight="48dp" />
+
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="0dp" android:layout_weight="1" />
+
+	<Button android:id="@+id/pageButton" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+		android:text="@string/pagebutton_newgame" style="@style/PageButton"
+		android:layout_margin="10dp" />
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+	<style name="Theme.Light.NNN" parent="@android:Theme.Light.NoTitleBar">
+		<item name="android:windowBackground">@null</item>
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="android:windowAnimationStyle">@style/PageAnimation</item>
+		<item name="buttonStyleKeypad">@style/KeypadButton</item>
+		<item name="buttonStyleKeypadToggle">@style/KeypadToggleButton</item>
+	</style>
+
+	<style name="KeypadButton" parent="android:style/Widget.Button">
+		<item name="android:background">@drawable/button_keypad</item>
+		<item name="android:width">62dp</item>
+	</style>
+
+	<style name="KeypadToggleButton" parent="android:style/Widget.Button.Toggle">
+		<item name="android:background">@drawable/button_keypad_toggle</item>
+	</style>
+
+	<style name="commonButton" parent="android:style/Widget.Button">
+		<item name="android:background">@drawable/button_common</item>
+		<item name="android:textColor">@color/p_button</item>
+		<item name="android:padding">10dp</item>
+		<item name="android:textSize">20sp</item>
+		<item name="android:minWidth">120dp</item>
+	</style>
+
+	<style name="PageTitle">
+		<item name="android:gravity">center</item>
+		<item name="android:layout_height">@dimen/title_height</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_marginLeft">80dp</item>
+		<item name="android:shadowColor">#fccc</item>
+		<item name="android:shadowDx">0</item>
+		<item name="android:shadowDy">3</item>
+		<item name="android:shadowRadius">3</item>
+		<item name="android:textColor">#f999</item>
+		<item name="android:textSize">36sp</item>
+	</style>
+
+	<style name="PageButton">
+		<item name="android:background">@drawable/button_pencil</item>
+		<item name="android:gravity">center</item>
+		<item name="android:shadowColor">#fccc</item>
+		<item name="android:shadowDx">0</item>
+		<item name="android:shadowDy">-3</item>
+		<item name="android:shadowRadius">3</item>
+		<item name="android:textColor">#f999</item>
+		<item name="android:textSize">30sp</item>
+	</style>
+
+	<style name="PageButtonBack" parent="@style/PageButton">
+		<item name="android:background">@drawable/button_pencilback</item>
+	</style>
+
+	<style name="PageAnimation">
+		<item name="android:windowEnterAnimation">@anim/zoom_in</item>
+		<item name="android:windowExitAnimation">@anim/zoom_out</item>
+	</style>
+
+	<style name="MenuAnimation" parent="android:Animation">
+		<item name="android:windowEnterAnimation">@anim/menu_in</item>
+		<item name="android:windowExitAnimation">@anim/menu_out</item>
+	</style>
+
+	<style name="MenuButton" parent="android:Widget.Button">
+		<item name="android:background">@drawable/menu</item>
+		<item name="android:layout_margin">1dip</item>
+		<item name="android:paddingBottom">4dp</item>
+		<item name="android:paddingLeft">4dp</item>
+		<item name="android:paddingRight">4dp</item>
+		<item name="android:paddingTop">6dp</item>
+		<item name="android:textColor">#FFF</item>
+	</style>
+
+	<style name="ProgressBar" parent="android:attr/progressBarStyleHorizontal">
+		<item name="android:maxHeight">16dp</item>
+		<item name="android:minHeight">16dp</item>
+		<item name="android:background">@drawable/progress_background</item>
+		<item name="android:indeterminateOnly">false</item>
+		<item name="android:indeterminateDrawable">@anim/progress</item>
+		<item name="android:progressDrawable">@drawable/progressbar</item>
+	</style>
+</resources>
+

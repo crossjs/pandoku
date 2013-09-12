@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="@drawable/bg">
+
+	<TextView android:text="@string/page_title_resume" style="@style/PageTitle"
+		android:id="@+id/pageTitle" />
+
+	<ListView android:id="@id/android:list" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:cacheColorHint="#0000"
+		android:layout_weight="1" android:layout_margin="10dp" />
+
+	<Button style="@style/PageButtonBack" android:id="@+id/pageButton"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="@string/pagebutton_back" android:layout_gravity="center_horizontal"
+		android:layout_margin="10dp" />
+</LinearLayout>

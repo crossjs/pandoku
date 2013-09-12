@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_margin="2dp" android:background="#8000" android:id="@+id/menuContainer"
+	android:layout_height="fill_parent" android:layout_width="fill_parent"
+	android:padding="1dp" android:orientation="horizontal">
+
+	<Button style="@style/MenuButton" android:layout_height="wrap_content"
+		android:layout_width="0dip" android:id="@+id/menu_update"
+		android:layout_weight="1" android:text="@string/menu_update"
+		android:drawableTop="@drawable/ic_menu_update" />
+
+	<Button style="@style/MenuButton" android:layout_height="wrap_content"
+		android:layout_width="0dip" android:id="@+id/menu_help"
+		android:layout_weight="1" android:text="@string/menu_help"
+		android:drawableTop="@drawable/ic_menu_help" />
+
+	<Button style="@style/MenuButton" android:layout_height="wrap_content"
+		android:layout_width="0dip" android:id="@+id/menu_about"
+		android:layout_weight="1" android:text="@string/menu_about"
+		android:drawableTop="@drawable/ic_menu_about" />
+
+	<Button style="@style/MenuButton" android:layout_height="wrap_content"
+		android:layout_width="0dip" android:id="@+id/menu_exit"
+		android:layout_weight="1" android:text="@string/menu_exit"
+		android:drawableTop="@drawable/ic_menu_exit" />
+
+</LinearLayout>
+ 

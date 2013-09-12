@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+	<style name="Theme.NoBackground.NoTitleBar.NoOverlay.Light"
+		parent="@android:Theme.Light.NoTitleBar">
+		<item name="android:windowBackground">@null</item>
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="buttonStyleKeypad">@style/KeypadButton</item>
+		<item name="buttonStyleKeypadToggle">@style/KeypadToggleButton</item>
+	</style>
+
+</resources>

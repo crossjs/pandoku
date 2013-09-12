@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+	<declare-styleable name="Theme">
+		<attr name="buttonStyleKeypad" format="reference" />
+		<attr name="buttonStyleKeypadToggle" format="reference" />
+	</declare-styleable>
+
+	<declare-styleable name="KeypadButton">
+		<attr name="highlighted" format="boolean" />
+	</declare-styleable>
+
+	<declare-styleable name="KeypadToggleButton">
+		<attr name="checked" format="boolean" />
+	</declare-styleable>
+
+	<declare-styleable name="DrawableStates">
+		<attr name="state_checked" format="boolean" />
+		<attr name="state_highlighted" format="boolean" />
+	</declare-styleable>
+
+</resources>

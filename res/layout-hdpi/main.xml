@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layoutRoot" android:background="@drawable/bg"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" style="@style/PageAnimation">
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="0dp" android:layout_weight="1"></TextView>
+	<ImageButton android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:id="@+id/resumeButton"
+		android:background="@drawable/main_button_resume" android:src="@drawable/button_resume"
+		android:layout_marginLeft="128dp" />
+	<ImageButton android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:id="@+id/newgameButton"
+		android:background="@drawable/main_button_newgame" android:src="@drawable/button_newgame"
+		android:layout_marginLeft="128dp" android:layout_marginTop="20dp" />
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="0dp" android:layout_weight="1"></TextView>
+	<ImageView android:layout_gravity="right"
+		android:layout_height="wrap_content" android:src="@drawable/pandoku"
+		android:layout_width="wrap_content" android:id="@+id/logoPandoku"
+		android:layout_marginBottom="20dp" android:layout_marginRight="20dp" />
+</LinearLayout>

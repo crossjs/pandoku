@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory android:title="@string/pref_category_display">
+
+		<CheckBoxPreference android:key="fullscreen_mode"
+			android:defaultValue="true" android:title="@string/pref_fullscreen_mode" />
+
+		<ListPreference android:key="color_theme"
+			android:defaultValue="CLASSIC" android:title="@string/pref_color_theme"
+			android:entries="@array/pref_entries_color_theme"
+			android:entryValues="@array/pref_entryvalues_color_theme"
+			android:dialogTitle="@string/pref_color_theme" />
+
+		<ListPreference android:key="colored_regions"
+			android:defaultValue="STANDARD_X_HYPER_SQUIGGLY" android:title="@string/pref_colored_regions"
+			android:entries="@array/pref_entries_colored_regions"
+			android:entryValues="@array/pref_entryvalues_colored_regions"
+			android:dialogTitle="@string/pref_colored_regions" />
+
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="@string/pref_category_behavior">
+
+		<ListPreference android:key="input_method"
+			android:defaultValue="CELL_THEN_VALUES" android:title="@string/pref_input_method"
+			android:entries="@array/pref_entries_input_method"
+			android:entryValues="@array/pref_entryvalues_input_method"
+			android:dialogTitle="@string/pref_input_method" />
+
+		<CheckBoxPreference android:key="check_against_solution"
+			android:defaultValue="true" android:title="@string/pref_check_against_solution" />
+
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="@string/pref_category_game_features">
+
+		<ListPreference android:key="highlight_digits_2"
+			android:defaultValue="ONLY_SINGLE_VALUES" android:title="@string/pref_highlight_digits"
+			android:entries="@array/pref_entries_highlight_digits"
+			android:entryValues="@array/pref_entryvalues_highlight_digits"
+			android:dialogTitle="@string/pref_highlight_digits" />
+
+		<CheckBoxPreference android:key="show_timer"
+			android:defaultValue="true" android:title="@string/pref_show_timer" />
+
+		<CheckBoxPreference android:key="enable_eliminate_values"
+			android:defaultValue="false" android:title="@string/pref_enable_eliminate_values" />
+
+	</PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<string name="app_name">熊猫数独</string>
+	<string name="app_version">1.0.4</string>
+	<string name="version">版本：</string>
+
+	<string name="age_0_minutes">就是刚才</string>
+	<string name="age_1_day">昨天</string>
+	<string name="age_1_hour">1小时前</string>
+	<string name="age_1_minute">1分钟前</string>
+	<string name="age_1_week">1星期前</string>
+	<string name="age_2_days">2天前</string>
+	<string name="age_n_days">%d天前</string>
+	<string name="age_n_hours">%d小时前</string>
+	<string name="age_n_minutes">%d分钟前</string>
+	<string name="age_n_weeks">%d星期前</string>
+
+	<string name="alert_dialog_ok">确定</string>
+	<string name="alert_dialog_cancel">取消</string>
+
+	<string name="pagebutton_back">返回</string>
+	<string name="pagebutton_newgame">准备出发</string>
+
+	<string name="button_go_ahead">继续前进</string>
+
+	<string name="button_reset_game">重置游戏</string>
+	<string name="button_resume">继续游戏</string>
+	<string name="button_start_game">开始游戏</string>
+
+	<string name="message_reset_puzzle">清除当前游戏并重置计时？</string>
+	<string name="message_reset_all_puzzles">重置当前类别下的所有游戏？</string>
+
+	<string name="message_computing_solution">正在运行检查……</string>
+	<string name="info_puzzle_ok_n">未发现错误。还剩%d个格子未填。</string>
+	<string name="warn_invalid_puzzle">此关卡无解，因为它不是个符合规则。</string>
+	<string name="warn_puzzle_errors">抱歉！你的答案不正确。</string>
+	<string name="info_invalid_solution">抱歉！你的答案不正确。请检查……</string>
+
+	<string name="menu_check">检查</string>
+	<string name="menu_pause">暂停</string>
+	<string name="menu_reset">重置</string>
+	<string name="menu_reset_all">全部重置</string>
+	<string name="menu_resume">继续</string>
+	<string name="menu_eliminate">排除</string>
+	<string name="menu_settings">设置</string>
+	<string name="menu_update">更新</string>
+	<string name="menu_help">帮助</string>
+	<string name="menu_about">关于</string>
+	<string name="menu_exit">退出</string>
+
+	<string name="message_fingertip">手指左右滑动切换关卡</string>
+
+	<string name="message_congrats">&lt;b&gt;祝贺你！挑战成功！&lt;/b&gt;</string>
+	<string name="message_statistics_details">过关：%1$d&lt;br/&gt;平均：%2$s&lt;br/&gt;最快：%3$s
+	</string>
+
+	<string name="message_empty_folder">目录“%s”为空</string>
+
+	<string name="name_sudoku_squiggly">拼图+普通</string>
+	<string name="name_sudoku_squiggly_hyper">拼图+窗格</string>
+	<string name="name_sudoku_squiggly_x">拼图+对角</string>
+	<string name="name_sudoku_squiggly_percent">拼图+巴仙</string>
+	<string name="name_sudoku_squiggly_color">拼图+迷彩</string>
+	<string name="name_sudoku_standard">标准+普通</string>
+	<string name="name_sudoku_standard_hyper">标准+窗格</string>
+	<string name="name_sudoku_standard_x">标准+对角</string>
+	<string name="name_sudoku_standard_percent">标准+巴仙</string>
+	<string name="name_sudoku_standard_color">标准+迷彩</string>
+
+	<string name="page_title_resume">旧的进度</string>
+	<string name="page_title_newgame">新的挑战</string>
+	<string name="page_title_folder_list">选择目录</string>
+	<string name="page_title_update">更新</string>
+	<string name="page_title_settings">设置</string>
+	<string name="page_title_help">帮助</string>
+	<string name="page_title_about">关于</string>
+
+	<string name="level_text_1">极易</string>
+	<string name="level_text_2">容易</string>
+	<string name="level_text_3">中等</string>
+	<string name="level_text_4">困难</string>
+	<string name="level_text_5">极难</string>
+	<string name="mini_stats_0">（此系列还没有完成任何挑战）</string>
+	<string name="mini_stats_n">（过关：%1$d，平均：%2$s，最快：%3$s）</string>
+	
+	<string name="button_check_update">检测更新</string>	
+	<string name="button_cancel_check_update">取消更新</string>
+	<string name="button_download_update">下载更新</string>
+	<string name="button_cancel_download_update">取消更新</string>
+	<string name="button_install_update">安装更新</string>
+
+	<string name="copyright">Copyright &#x00a9; 2011 fully.</string>
+	<string name="thanksto">鸣谢</string>
+	<string name="thanksto_content">Andoku by Markus Wiederkehr\nTarepanda by Suemasa
+		Hikaru</string>
+	<string name="projecturl">http://code.google.com/p/pandoku</string>
+
+	<string name="help_content">&lt;h1&gt;数独介绍&lt;/h1&gt;
+		&lt;p&gt;数独以一个9×9的大九宫格为盘面，每一宫包含一个小九宫格，并给出一定的已知数字。
+		游戏的目标是在其他的空格上填入1-9的数字，使每个数字在每一行、每一列和每一宫中都只出现一次。&lt;/p&gt;
+		&lt;h1&gt;游戏变种&lt;/h1&gt;
+		&lt;p&gt;除标准数独外，熊猫数独还提供多种变种数独。在&lt;i&gt;新的挑战&lt;/i&gt;界面，你可以看到总共有十种风格的数独游戏。&lt;/p&gt;
+		&lt;h2&gt;网格样式&lt;/h2&gt;
+		&lt;h3&gt;标准网格&lt;/h3&gt;
+		&lt;p&gt;由9个九宫格组成。&lt;/p&gt;
+		&lt;h3&gt;拼图网格&lt;/h3&gt;
+		&lt;p&gt;由9个面积相等的方格阵（非九宫格，以粗线条分割）组成。&lt;/p&gt;
+		&lt;h2&gt;额外区域&lt;/h2&gt;
+		&lt;p&gt;在增加的额外限制区域里，每个数字同样仅能出现一次，有如下四种情况：&lt;/p&gt;
+		&lt;h3&gt;对角&lt;/h3&gt;
+		&lt;p&gt;增加的两个额外区域，为大九宫格的两条对角线。&lt;/p&gt;
+		&lt;h3&gt;窗格&lt;/h3&gt;
+		&lt;p&gt;增加的四个额外区域，为四个小九宫格，类似一个窗户。&lt;/p&gt;
+		&lt;h3&gt;巴仙&lt;/h3&gt;
+		&lt;p&gt;增加的三个额外区域，为大九宫格的一条对角线和两个小九宫格，类似百分比符号。&lt;/p&gt;
+		&lt;h3&gt;迷彩&lt;/h3&gt;
+		&lt;p&gt;每一个小九宫格由同样顺序的9种不同颜色组成，在相同的颜色区域，每个数字仅能出现一次。&lt;/p&gt;</string>
+
+</resources>

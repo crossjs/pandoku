@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_margin="2dp" android:background="#8000" android:id="@+id/menuContainer"
+	android:layout_height="fill_parent" android:layout_width="fill_parent"
+	android:padding="1dp" android:orientation="horizontal">
+
+	<Button style="@style/MenuButton" android:layout_height="wrap_content"
+		android:layout_width="0dip" android:id="@+id/menu_settings"
+		android:layout_weight="1" android:text="@string/menu_settings"
+		android:drawableTop="@drawable/ic_menu_settings" />
+
+	<Button style="@style/MenuButton" android:layout_height="wrap_content"
+		android:layout_width="0dip" android:id="@+id/menu_eliminate"
+		android:layout_weight="1" android:text="@string/menu_eliminate"
+		android:drawableTop="@drawable/ic_menu_eliminate" />
+
+	<Button style="@style/MenuButton" android:layout_height="wrap_content"
+		android:layout_width="0dip" android:id="@+id/menu_reset_puzzle"
+		android:layout_weight="1" android:text="@string/menu_reset"
+		android:drawableTop="@drawable/ic_menu_reset" />
+
+	<Button style="@style/MenuButton" android:layout_height="wrap_content"
+		android:layout_width="0dip" android:id="@+id/menu_reset_all"
+		android:layout_weight="1" android:text="@string/menu_reset_all"
+		android:drawableTop="@drawable/ic_menu_reset" />
+
+	<Button style="@style/MenuButton" android:layout_height="wrap_content"
+		android:layout_width="0dip" android:id="@+id/menu_exit"
+		android:layout_weight="1" android:text="@string/menu_exit"
+		android:drawableTop="@drawable/ic_menu_exit" />
+
+</LinearLayout>
+ 

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.whenfully.pandoku" android:versionName="1.0.4" android:versionCode="5">
+
+	<uses-sdk android:targetSdkVersion="7" android:minSdkVersion="7" />
+
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.INSTALL_PACKAGES"></uses-permission>
+
+	<application android:icon="@drawable/icon" android:label="@string/app_name"
+		android:name=".Application" android:theme="@style/Theme.Light.NNN">
+
+		<activity android:name=".MainActivity" android:label="@string/app_name"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".AboutActivity" android:label="@string/app_name"
+			android:screenOrientation="portrait" />
+
+		<activity android:name=".HelpActivity" android:label="@string/app_name"
+			android:screenOrientation="portrait" />
+
+		<activity android:name=".NewGameActivity" android:label="@string/app_name"
+			android:screenOrientation="portrait" />
+
+		<activity android:name=".PandokuActivity" android:label="@string/app_name"
+			android:screenOrientation="portrait" />
+
+		<activity android:name=".ResumeGameActivity" android:label="@string/app_name"
+			android:screenOrientation="portrait" />
+
+		<activity android:name=".SettingsActivity" android:label="@string/app_name"
+			android:screenOrientation="portrait" />
+
+		<activity android:name=".MyUpdate" android:label="@string/app_name"
+			android:screenOrientation="portrait" />
+
+		<receiver android:name=".MyBroadcastReceiver">
+			<intent-filter>
+				<action android:name="com.whenfully.pandoku.exit"></action>
+			</intent-filter>
+		</receiver>
+
+	</application>
+
+</manifest> 

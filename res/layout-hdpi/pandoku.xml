@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layoutRoot" android:layout_width="fill_parent"
+	android:orientation="vertical" android:layout_height="fill_parent">
+
+	<com.whenfully.pandoku.PandokuPuzzleView
+		android:id="@+id/viewPuzzle" android:focusableInTouchMode="true"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_gravity="center_horizontal" android:layout_marginTop="10dp"
+		android:layout_marginBottom="10dp" android:layout_marginLeft="@dimen/pandoku_left"
+		android:layout_marginRight="@dimen/pandoku_right" />
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:layout_marginLeft="@dimen/pandoku_left"
+		android:layout_marginRight="@dimen/pandoku_right">
+
+		<TextView android:id="@+id/labelPuzzleSource"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1" android:singleLine="true"
+			android:ellipsize="marquee" />
+
+		<TextView android:id="@+id/labelPuzzleName"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1" android:gravity="right" android:singleLine="true"
+			android:ellipsize="marquee" />
+
+		<TextView android:id="@+id/labelPuzzleLevel"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:gravity="left" android:layout_weight="1" android:singleLine="true"
+			android:ellipsize="marquee" />
+
+		<TextView android:id="@+id/labelTimer" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="00:00:00"
+			android:layout_weight="1" android:gravity="right" android:singleLine="true"
+			android:ellipsize="marquee" />
+
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:orientation="vertical" android:layout_height="0dp"
+		android:layout_weight="1">
+
+		<TableLayout android:id="@+id/keypad"
+			android:layout_weight="1" android:layout_width="fill_parent"
+			android:layout_marginTop="10dp" android:layout_marginBottom="10dp"
+			android:layout_marginLeft="@dimen/pandoku_left"
+			android:layout_marginRight="@dimen/pandoku_right"
+			android:layout_height="0dp">
+
+			<TableRow android:layout_height="wrap_content"
+				android:layout_weight="1" android:layout_width="fill_parent">
+				<ImageButton android:id="@+id/input_undo" android:src="@drawable/ic_undo"
+					style="@style/KeypadButton" android:layout_gravity="center_vertical"
+					android:layout_height="fill_parent" android:layout_width="0dp"
+					android:layout_weight="1" />
+				<com.whenfully.pandoku.KeypadToggleButton
+					android:src="@drawable/number_1" android:id="@+id/input_1"
+					android:layout_height="fill_parent" android:layout_width="0dp"
+					android:layout_weight="1" />
+				<com.whenfully.pandoku.KeypadToggleButton
+					android:src="@drawable/number_2" android:id="@+id/input_2"
+					android:layout_height="fill_parent" android:layout_width="0dp"
+					android:layout_weight="1" />
+				<com.whenfully.pandoku.KeypadToggleButton
+					android:src="@drawable/number_3" android:id="@+id/input_3"
+					android:layout_height="fill_parent" android:layout_width="0dp"
+					android:layout_weight="1" />
+				<ImageButton android:id="@+id/input_redo" android:src="@drawable/ic_redo"
+					style="@style/KeypadButton" android:layout_gravity="center_vertical"
+					android:layout_height="fill_parent" android:layout_width="0dp"
+					android:layout_weight="1" />
+			</TableRow>
+
+			<TableRow android:layout_height="wrap_content"
+				android:layout_weight="1" android:layout_width="fill_parent">
+				<ImageButton android:id="@+id/input_check" android:src="@drawable/ic_check"
+					style="@style/KeypadButton" android:layout_gravity="center_vertical"
+					android:layout_height="fill_parent" android:layout_width="0dp"
+					android:layout_weight="1" />
+				<com.whenfully.pandoku.KeypadToggleButton
+					android:src="@drawable/number_4" android:id="@+id/input_4"
+					android:layout_height="fill_parent" android:layout_width="0dp"
+					android:layout_weight="1" />
+				<com.whenfully.pandoku.KeypadToggleButton
+					android:src="@drawable/number_5" android:id="@+id/input_5"
+					android:layout_height="fill_parent" android:layout_width="0dp"
+					android:layout_weight="1" />
+				<com.whenfully.pandoku.KeypadToggleButton
+					android:src="@drawable/number_6" android:id="@+id/input_6"
+					android:layout_height="fill_parent" android:layout_width="0dp"
+					android:layout_weight="1" />
+				<ImageButton android:id="@+id/input_pause" android:src="@drawable/ic_pause"
+					style="@style/KeypadButton" android:layout_gravity="center_vertical"
+					android:layout_height="fill_parent" android:layout_width="0dp"
+					android:layout_weight="1" />
+			</TableRow>
+
+			<TableRow android:layout_height="wrap_content"
+				android:layout_weight="1" android:layout_width="fill_parent">
+				<ImageButton android:id="@+id/input_invert" android:src="@drawable/ic_invert"
+					style="@style/KeypadButton" android:layout_gravity="center_vertical"
+					android:layout_height="fill_parent" android:layout_width="0dp"
+					android:layout_weight="1" />
+				<com.whenfully.pandoku.KeypadToggleButton
+					android:src="@drawable/number_7" android:id="@+id/input_7"
+					android:layout_height="fill_parent" android:layout_width="0dp"
+					android:layout_weight="1" />
+				<com.whenfully.pandoku.KeypadToggleButton
+					android:src="@drawable/number_8" android:id="@+id/input_8"
+					android:layout_height="fill_parent" android:layout_width="0dp"
+					android:layout_weight="1" />
+				<com.whenfully.pandoku.KeypadToggleButton
+					android:src="@drawable/number_9" android:id="@+id/input_9"
+					android:layout_height="fill_parent" android:layout_width="0dp"
+					android:layout_weight="1" />
+				<ImageButton android:id="@+id/input_clear" android:src="@drawable/ic_clear"
+					style="@style/KeypadButton" android:layout_gravity="center_vertical"
+					android:layout_height="fill_parent" android:layout_width="0dp"
+					android:layout_weight="1" />
+			</TableRow>
+
+		</TableLayout>
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:orientation="vertical" android:id="@+id/buttons"
+			android:layout_weight="1" android:layout_height="0dp"
+			android:layout_margin="10dp">
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="0dp" android:layout_weight="1"></TextView>
+			<TextView android:id="@+id/labelCongrats"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:textColor="#f242" android:gravity="center_horizontal"
+				android:textSize="12sp" />
+
+			<TextView android:id="@+id/labelFingertip"
+				android:background="@drawable/fingertip" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="@string/message_fingertip"
+				android:textSize="12sp" android:gravity="center_horizontal" />
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="0dp" android:layout_weight="1"></TextView>
+
+			<Button android:id="@+id/buttonStart" style="@style/PageButton"
+				android:layout_width="wrap_content" android:text="@string/button_start_game"
+				android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+				android:layout_marginTop="10dp" />
+		</LinearLayout>
+		<!--include layout="@layout/fix" / -->
+	</LinearLayout>
+</LinearLayout>
